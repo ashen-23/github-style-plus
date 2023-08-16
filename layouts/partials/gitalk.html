@@ -5,6 +5,9 @@
 <script>
   const gitalk = new Gitalk({
     accessToken: '{{ .Site.Params.Gitalk.accessToken }}',
+    title: '{{ .Title }}',
+    clientID: '{{ .Site.Params.gitalk.clientId }}',
+    clientSecret: '{{ .Site.Params.gitalk.clientSecret }}',
     repo: '{{ .Site.Params.Gitalk.repo }}',
     owner: '{{ .Site.Params.Gitalk.owner }}',
     admin: ['{{ .Site.Params.Gitalk.owner }}'],
